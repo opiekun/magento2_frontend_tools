@@ -9,8 +9,8 @@ Set of front-end tools for Magento 2
 * Magento 2 project with SASS based theme for example [SASS version of "Blank"](https://github.com/SnowdogApps/magento2-theme-blank-sass) or [Alpaca Theme](https://github.com/SnowdogApps/magento2-alpaca-theme)
 
 ## Installation
-1. Run `composer require snowdog/frontools`
-2. Go to package directory `cd vendor/snowdog/frontools`
+1. Run `composer require creaminternet/frontools`
+2. Go to package directory `cd vendor/creaminternet/frontools`
 3. Run `yarn` or `npm install`
 4. Decide where you want to keep your config files.
 You can store them in Frontools `config` directory or in `dev/tools/frontools/config` (recommended).
@@ -40,7 +40,7 @@ You can choose Sass compiler between the default, but [already deprecated](https
 Since the Dart Sass does not have the same set of features as Node Sass, for now we will keep the older version as default.
 
 ## Optional configurations for 3rd party plugins
-You will find sample config files for theses plugins in `vendor/snowdog/frontools/config` directory.
+You will find sample config files for theses plugins in `vendor/creaminternet/frontools/config` directory.
 * Create [browserSync](https://www.browsersync.io/) configuration
 * Create [eslint](https://eslint.org/) configuration
 * Create [sass-lint](https://github.com/sasstools/sass-lint) configuration
@@ -80,7 +80,7 @@ Use `yarn [taskName]` or `npm run [taskName]` to run the task.
 * `sasslint` - Run [sass-lint](https://github.com/sasstools/sass-lint) based tests.
   * `--theme name` - Process single theme.
   * `--ci` - Enable throwing errors. Useful in CI/CD pipelines.
-* `setup` - Creates a convenient symlink from `/tools` to `/vendor/snowdog/frontools` and copies all sample files if no configuration exists.
+* `setup` - Creates a convenient symlink from `/tools` to `/vendor/creaminternet/frontools` and copies all sample files if no configuration exists.
   * `--symlink name` - If you don't want to use `tools` as the symlink you can specify another name.
 * `styles` - Use this task to manually trigger styles processing pipeline.
   * `--theme name` - Process single theme.
