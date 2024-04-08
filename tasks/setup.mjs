@@ -6,7 +6,7 @@ import colors from 'ansi-colors'
 import { env, projectPath } from '../helpers/config.mjs'
 
 export const setup = callback => {
-  // Create a relative symlink in project root to /vendor/snowdog/frontools
+  // Create a relative symlink in project root to /vendor/creaminternet/frontools
   const relativeDirectory = path.relative(
     projectPath,
     fs.realpathSync('./')
