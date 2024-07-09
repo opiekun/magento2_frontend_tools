@@ -2,7 +2,6 @@ import gulp from 'gulp'
 import path from 'path'
 import gulpIf from 'gulp-if'
 import dartSass from 'sass'
-import nodeSass from 'node-sass'
 import gulpSass from 'gulp-sass'
 import rename from 'gulp-rename'
 import multiDest from './multi-dest.mjs'
@@ -28,7 +27,6 @@ export default function(name, file) {
   const includePaths = theme.includePaths ? theme.includePaths : []
   const postcssConfig = []
   const disableSuffix = theme.disableSuffix || false
-  const sassCompiler = configLoader('sass-compiler.json', false)
 
   configLoader('.browserslistrc')
 
@@ -68,7 +66,7 @@ export default function(name, file) {
       )
     )
     .pipe(gulpIf(!disableMaps, sourcemaps.init()))
-    .pipe(gulpSass(sassCompiler === 'dart-sass' ? dartSass : nodeSass)({ includePaths: includePaths })
+    .pipe(gulpSass(dartSass)({ includePaths: includePaths })
       .on('error', sassError(env.ci || false)))
     .pipe(gulpIf(production, postcss([cssnano()])))
     .pipe(gulpIf(postcssConfig.length, postcss(postcssConfig || [])))
