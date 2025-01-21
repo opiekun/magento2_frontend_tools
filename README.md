@@ -4,9 +4,9 @@
 Set of front-end tools for Magento 2
 
 ## Requirements
-* Unix-like OS (please, do not ask about Windows support)
-* Node.js [LTS version](https://nodejs.org/en/about/releases/). We recommend using [Volta](https://volta.sh/).
-* Magento 2 project with SASS based theme for example [SASS version of "Blank"](https://github.com/SnowdogApps/magento2-theme-blank-sass) or [Alpaca Theme](https://github.com/SnowdogApps/magento2-alpaca-theme)
+* Unix-like OS, like Mac OS or Linux
+* Node.js version 18 or higher [LTS version](https://nodejs.org/en/about/releases/)
+* Magento 2 project with SASS based theme for example [SASS version of "Blank"](https://github.com/creaminternet/magento2-theme-blank-sass)
 
 ## Installation
 1. Run `composer require creaminternet/frontools`
