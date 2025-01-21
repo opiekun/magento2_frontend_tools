@@ -1,7 +1,9 @@
 [![Packagist](https://img.shields.io/packagist/v/creaminternet/frontools.svg)](https://packagist.org/packages/creaminternet/frontools) [![Packagist](https://img.shields.io/packagist/dt/creaminternet/frontools.svg)](https://packagist.org/packages/creaminternet/frontools)
 
-# Magento 2 Frontools
-Set of front-end tools for Magento 2
+# Frontools for Magento 2
+The official fork of the Snowdog Frontools. 
+
+Frontools is a set of frontend tools for Magento 2, with SASS compilation, CSS and JS linters, SVG sprite genaration, hot-reloading and more.
 
 ## Requirements
 * Unix-like OS, like Mac OS or Linux
